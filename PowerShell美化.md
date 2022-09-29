@@ -46,3 +46,10 @@ Install-Module PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublis
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 ```
 
+### 设置预测命令颜色
+
+```sh
+Set-PSReadLineOption -Colors @{ InlinePrediction = "#C0C0C0" }
+```
+
+![](https://i0.hdslb.com/bfs/album/c773b2054403e97d80d5ba7b95f7713216bb4a8b.png)
