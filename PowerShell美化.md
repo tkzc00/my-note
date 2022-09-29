@@ -53,3 +53,20 @@ Set-PSReadLineOption -Colors @{ InlinePrediction = "#C0C0C0" }
 ```
 
 ![](https://i0.hdslb.com/bfs/album/c773b2054403e97d80d5ba7b95f7713216bb4a8b.png)
+
+## 配置 PSReadLine
+
+```sh
+notepad $PROFILE
+```
+
+添加以下内容
+
+```txt
+Import-Module PSReadLine
+Set-PSReadLineOption -PredictionSource History
+Set-PSReadLineOption -Colors @{ InlinePrediction = "#C0C0C0" }
+```
+
+
+
